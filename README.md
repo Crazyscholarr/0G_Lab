@@ -81,14 +81,11 @@ Mẫu config.json / Sample config.json
   "rpcUrl": "https://evmrpc-testnet.0g.ai",
   "contracts": {
     "Ethereum": "0xce830D0905e0f7A9b300401729761579c5FB6bd6",
-    "Bitcoin": "0x1E0D871472973c562650E991ED8006549F8CBEfc",
-    "Tether": "0x9A87C2412d500343c073E5Ae5394E3bE3874F76b"
+    "Tether": "0x9A87C2412d500343c073E5Ae5394E3bE3874F76b",
+    "Bitcoin": "0x1E0D871472973c562650E991ED8006549F8CBEfc"
   },
-  "swapRouterAddress": "0xd86b764618c6e3c078845be3c3fce50ce9535da7",
+  "swapRouterAddress": "0xE233D75Ce6f04C04610947188DEC7C55790beF3b",
   "gasSettings": {
-    "defaultGasLimitMint": 500000,
-    "defaultGasLimitApprove": 100000,
-    "defaultGasLimitSwap": 300000,
     "gasPriceMultiplier": 1.2
   },
   "swapSettings": {
@@ -101,12 +98,16 @@ Mẫu config.json / Sample config.json
     "retryDelay": 15000
   },
   "transactionSettings": {
-    "maxTransactionCount": 100,
-    "transactionTimeout": 300000,
-    "retryDelay": 15000
+    "maxTransactionCount": 10,
+    "maxTransactionDelay": 30000
+  },
+  "logging": {
+    "logLevel": "info",
+    "logFile": "swapbot.log",
+    "logFormat": "json"
   },
   "concurrencyLimit": 5,
-  "language": "vi" // "vi" hoặc "en"
+  "language": "en"
 }
 ```
 ## Giải Thích / Explanation
