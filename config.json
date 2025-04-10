@@ -1,0 +1,32 @@
+{
+  "rpcUrl": "https://evmrpc-testnet.0g.ai",
+  "contracts": {
+    "Ethereum": "0xce830D0905e0f7A9b300401729761579c5FB6bd6",
+    "Tether": "0x9A87C2412d500343c073E5Ae5394E3bE3874F76b",
+    "Bitcoin": "0x1E0D871472973c562650E991ED8006549F8CBEfc"
+  },
+  "swapRouterAddress": "0xE233D75Ce6f04C04610947188DEC7C55790beF3b",
+  "gasSettings": {
+    "gasPriceMultiplier": 1.2
+  },
+  "swapSettings": {
+    "minSwapPercentage": 0.05,
+    "maxSwapPercentage": 0.10,
+    "slippageTolerance": 0.05
+  },
+  "retrySettings": {
+    "maxRetries": 3,
+    "retryDelay": 15000
+  },
+  "transactionSettings": {
+    "maxTransactionCount": 10,
+    "maxTransactionDelay": 30000
+  },
+  "logging": {
+    "logLevel": "info",
+    "logFile": "swapbot.log",
+    "logFormat": "json"
+  },
+  "concurrencyLimit": 5,
+  "language": "en"
+}
